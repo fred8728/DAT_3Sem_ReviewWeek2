@@ -1,0 +1,91 @@
+
+# The HTTP Protocol
+# 1.	Monitoring HTTP Headers 1
+# Opgave med index.html 
+STATUS CODE:
+-	304
+-	200
+
+## Opgave med index1.html
+STATUS CODE: 
+-	200
+-	200
+
+# 2) Monitoring HTTP Headers 2
+# Opgave hvor vi tilføjer link til index1.html
+STATUS CODE:
+-	200
+-	404
+
+# 3) Monitoring HTTP Headers 3  (Response-codes 3xx)
+# Opgave med r.html/redirect 
+STATUS CODE:
+Når jeg kører r.html
+-	200
+Når jeg kører redirect
+-	302
+-	200
+Browseren ved, at den skal tilgå r.html, når man anvender redirect, da der i vores doGet() metode anvendes ”response.sendRedirect(”r.html”);
+
+# 3a) Redirecting to HTTPs instead of HTTP
+# Opgave med http://studypoints.info
+STATUS CODE: 
+-	200
+-	200
+
+Da jeg indtastede ovenstående adresse blev jeg redirected to HTTPS (studypoints.info/#/view1)
+4a) Status Codes (5xx)
+# Opgave med servlet Ups
+STATUS CODE: 
+-	500
+ 
+# 4b) Status Codes (4xx)
+# Opgave med /I_dont_exist
+STATUS CODE:
+-	404
+
+# 4c) Status Codes - Ranges
+
+Status koder er inddelt I 5 forskellige klasser.
+1.	Informational responses (100-199)
+2.	Successful responses (200-299)
+3.	Redirects (300-399)
+4.	Client Errors (400-499)
+5.	Server Errors (500-599)
+
+5) Get HTTP Request Headers on the Server
+# Opgave med request header som output
+NOTE: Se projekt Header  servlet: showRH
+
+#6) Get/Post-parameters
+# Opgave med firstname/lastname
+
+NOTE: Se projekt Header  Webpages: name.html
+
+I browseren ses det, at når man anvender GET er det muligt, at se de indtastede parametre, hvorimod når man anvender POST vises de indtastede parametre ikke i browseren, men derimod gemt. 
+
+
+Session and Cookies
+
+For the next two exercises/demos you should create a new Maven web-project. Both the demos use a Servlet.
+#7)      Sessions (Session Cookies) 
+Note: Projektet eksisterer I mappen Wednesday og hedder Session. Servlet findes i mappen servlets  SessionDemo
+Har fulgt guide ift. at ændrer i metoden processRequest(), indtastet navn m.m.
+# Besvarelse til opgave g. 
+
+Der blev beskrevet i opgave d, at vi skulle indtaste navn og kopiere url i browseren, lukke fanen og indsætte den i en ny fane og derefter loade siden igen med samme URL. 
+
+Det var muligt, at tilgå URL’en igen efter vi havde lukket fanen og indsat den i en ny. Baggrunden for dette er, at session cookies. Session cookies bliver først slettet, når selve browseren er blevet lukket ned og jeg vil derfor mene, at webbrowseren har anvendt session restoring, hvilket gør de fleste session cookies permanente indtil browseren bliver lukket ned. 
+
+
+#8)     Persistent Cookies   
+Note: Projektet eksisterer I mappen Wednesday og hedder Session. Servlet findes i mappen servlets  CookieDemo
+Har fulgt guide ift. at ændrer i metoden processRequest(), indtastet navn m.m.
+# Besvarelse til opgave g. 
+
+Jeg har fulgt opgavebeskrivelsen og indtastet mit navn, hvorefter jeg kopierede URL og åbnede den i en ny fane. Derefter lukkede jeg selve browseren – åbnede den igen og indsatte den kopierede URL fra før. 
+
+Det er muligt for clienten, at tilgå den URL’en, da vores cookies i dette tilfælde er permanente, hvilket betyder at de ikke udløber idet klienten lukker for browseren. Permanente cookies udløber på en specifik dato eller efter et bestemt tidsrum. 
+
+Jeg har tilføjet et udklip fra udviklingsværktøjet (ligger under Wednesday), som ligeledes viser at vores cookies er permanente i dette tilfælde.  Se under: Response Headers  set-cookie
+
