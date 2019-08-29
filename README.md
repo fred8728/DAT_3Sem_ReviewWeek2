@@ -14,7 +14,7 @@ Tirsdags opgaverne var en introduction til JPA, samt hvordan man anvendte annote
 
 Bemærk: Test er ikke blevet lavet til denne opgave.
 
-## Onsdags opgaver:
+## Onsdagsopgaver:
 
 Onsdagsopgaverne omhandlede HTTP - ift. at kunne læse og skrive request og response headers på server. Derudover at kunne forklare HTTP status koder og de forskellige ranges, heraf (2xx, 3xx, 4xx og 5xx). Derudover at kunne forklare ideen med og demonstrerer hvordan HTTP tillader sessions oven på en stateless protokol, samt kunne forklare og demonstrerer brugen af HTTP cookies. 
 
@@ -30,7 +30,7 @@ Opgave 7-8
 # BEMÆRK: STATUS KODER OG BESVARELSE TIL OPGAVER FINDES I ET SEPERAT DOKUMENT I MAPPEN WEDNESDAY
 ```
 
-## Torsdags opgaver:
+## Torsdagsopgaven:
 
 Torsdagsopgaven er en "to-do" opgave for hver enkelt elev. Jeg har derfor ikke kunne aflevere en opgave. 
 Dog har jeg fuldført guiden og mit domæne er blevet forbundet med tomcat.
